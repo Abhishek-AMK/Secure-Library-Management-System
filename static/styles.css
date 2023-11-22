@@ -1,0 +1,158 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d6eaf0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Lib{
+    font-family: Arial, sans-serif;
+    background-color: #d6eaf0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+ 
+  .card {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-floating {
+    margin-bottom: 20px;
+  }
+  
+  .form-floating label {
+    margin-left: 10px;
+  }
+  
+  .form-floating input {
+    padding: 10px;
+    width: 95%;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  .btn {
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    margin-bottom: 5px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    margin-bottom: 5px;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  #result {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .psw {
+    float: right;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  
+  /*books section*/
+ 
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3d89d6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .row {
+    width: 100%; /* Each row spans the full width */
+    display: flex;
+    gap: 20px;
+    justify-content: space-between; /* Align books at each end of the row */
+  }
+  
+  .book {
+    flex: 1;
+    width: calc(50% - 10px); /* Each book takes half of the row width with a small gap between them */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .book img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .book h2 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .book p {
+    margin: 10px 0;
+  }
+  

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secure Standard Login</title>
+  <link rel="stylesheet" href="static\styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <form id="loginForm" method="post">
+        <div class="card-body">
+          <div class="text-center">
+            <img class="mb-4" src="static\Cyber Security readymade logo design.jpeg" alt="logo" width="72" height="57">
+          </div>
+          <h1 class="card-title">Login</h1>
+          <div class="form-floating">
+            <input type="text" placeholder="Enter username" name="name" class="form-control" id="name" required >
+            <label for="name">Name</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" placeholder="Enter Password" name="password" id="password" class="form-control" required>
+            <label for="password">Password</label>
+          </div>
+          <div>
+            <button type="button" onclick="validate()" class="btn btn-primary w-100" name="slogin">Login</button>
+          </div>
+          <div>
+            <a href="index.php"><button type="button" class="btn btn-danger">Cancel</button></a>
+            <span class="psw">Forgot <a href="fpassword.php">password?</a></span>
+          </div>
+          <span>If you are a new user, <a href="signup.php">click here to sign up</a>.</span>
+          <!-- Result display area -->
+          <div id="result" class="result"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function validate() {
+        var username = document.getElementById("name").value;
+        var password = document.getElementById("password").value;
+
+        // Test Scenarios
+        if (username === "abhishek" && password === "abhi123") {
+            displayResult("Verify the secured standard login - Login successful");
+            window.location.href = "/index";
+        } else if (username === "ranjan" && password === "ranjan123") {
+            displayResult("Verify the secured standard login - Login successful");
+            window.location.href = "/index";
+        } else if (username === "manas" && password === "manas123") {
+            displayResult("Verify the secured standard login - Login successful");
+            window.location.href = "/index";
+        } else if (username === "bharat" && password === "bharat123") {
+            displayResult("Verify the secured standard login - Login successful");
+            window.location.href = "/index";
+        } else if (username === "admin" && password === "admin123") {
+            displayResult("Verify the vulnerable standard login - Login successful");
+            window.location.href = "/index";
+        } else if (username === "12345" && password === "67890") {
+            displayResult("Verify the secured numeric login - Login successful");
+            window.location.href = "/index";
+        } else if (username === "11111" && password === "22222") {
+            displayResult("Verify the vulnerable numeric login - Login successful");
+            window.location.href = "/index";
+        } else if (username === "user" && password === "5f4dcc3b5aa765d61d8327deb882cf99") {
+            displayResult("Verify the MD5 login - Login successful");
+            window.location.href = "/index";
+        } else if (username === "user" && password === "$2y$10") {
+            displayResult("bcrypt - Login successful");
+            window.location.href = "/index";
+        } else {
+            displayResult("Login failed");
+        }
+    }
+
+    function displayResult(message) {
+        document.getElementById("result").innerText = message;
+    }
+  </script>
+</body>
+</html>
+
+
