@@ -1,0 +1,17 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 114-439-606
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:48:29] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:48:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:48:30] "[36mGET /static/Cyber%20Security%20readymade%20logo%20design.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:48:36] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\amkb2\\OneDrive\\Desktop\\Secure-Library-Management-System\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\amkb2\\OneDrive\\Desktop\\Secure-Library-Management-System\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\amkb2\\OneDrive\\Desktop\\Secure-Library-Management-System\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\amkb2\\OneDrive\\Desktop\\Secure-Library-Management-System\\app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 114-439-606

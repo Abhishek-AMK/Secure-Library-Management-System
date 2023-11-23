@@ -1,0 +1,1 @@
+app.secret_key = 'I_AM_ABHISHEK'  # Replace with a strong, random key
